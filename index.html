@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="website icon" type="png" href="image/heart.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Happy Birthday Dumma🥰</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxcontainer">
+            <div class="image">
+                <img src="flag.png" alt="">
+            </div>
+            <div class="text-happybirthday">
+                <img src="DummaBday .png" alt="">
+            </div>
+            <div class="cake">
+                <img src="cake.png" alt="">
+            </div>
+            <div class="box-balloon">
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+            </div>
+            <div class="box-cloud">
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+            </div>
+            <div class="box-firework">
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+            </div>
+            <div class="paperCannons">
+                <img src="paperCannons1.png" alt="">
+            </div>
+            <div class="box-giftbox">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+            </div>
+            <div class="mail">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="boxcute">
+                <div class="cute1">
+                    <img src="cute.png" alt="">
+                </div>
+                <div class="cute2">
+                    <img src="cute.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="Dummu.jpg" alt="">
+                    </div>
+                    <h3> Wish You Happy Birthday Preeti🥰😘</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>For you Dummy</h3>
+                        <h2>
+                            Today is a very special day for a very special person of my life😍.
+                            I wish you a  Happy birthday filled with wishes, joy, and happiness🤗🤗.
+                            May your new year be full of endless cheer and Joyful endles happiness, making you shine brighter than ever.
+                            
+                            Iam very lucky to have you in my life☺️. You are the most amazing person I have ever met.
+                            You are my best friend, my confidant, and my partner in My Sadness and Happiness😘😘.
+                            You are the reason I smile, the reason I laugh, and the reason I believe in love.
+                            I hope this year brings you all the happiness and success you deserve🤗🤗.
+                            Finally, I wish you the happiest birthday ever. May all the best things come your life☺️!
+
+                            Nanga express madlak agalla how much you mean to me,because i know what i feel you for me.
+                            nang onde assi ada life ni happy aagi iru ga with me or without me I wish you the always be happy Iam always there for You Dumma🥰Be Happy Dummy😘,Iga illa andur yavag bhi ni Nan Hendti ne 😁😁😁Your my wifey🥰😘.
+                            I love you so much, Dumma🥰 You are always special to me your place is permanant in my heart Iam with you Be happy Enjoy your life, WISH YOU HAPPY BIRTHDAY MY BABY😘😘.
+                        </h2>
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="birthday-audio" controls autoplay loop  style="display: none;">
+  <source src="BDaySong.ogg" type="audio/ogg">
+  <source src="BDaySong.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+    
+	<div id="copy">
+		<p class="text-center text-white text-sm">
+    </div>
+    
+</body>
+    <script>
+        document.addEventListener('mousemove', function(e){
+            let body = document.querySelector('body');
+            let heart = document.createElement('span');
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x+'px';
+            heart.style.top = y+'px';
+
+            let size = Math.random() * 10;
+            heart.style.width = size+'px';
+            heart.style.height = size+'px';
+            body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 1000);
+        });
+        const mail = document.querySelector('.mail');
+        const boxMail = document.querySelector('.boxMail');
+        const closeButton = document.querySelector('.boxMail i');
+        mail.addEventListener('click', () => {
+            boxMail.classList.add('active');
+        });
+        closeButton.addEventListener('click', () => {
+            boxMail.classList.remove('active');
+        });
+        const birthdayAudio = document.getElementById('birthday-audio');
+        birthdayAudio.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        });
+        birthdayAudio.volume = 0.5; // Set volume to 50%
+        birthdayAudio.play();
+    </script>
+</html>
