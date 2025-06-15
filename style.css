@@ -1249,7 +1249,7 @@ span::before{
     height: 100%;
     background: url(heart.png);
     background-size: cover;
-    animation: moveheart 1s linear infinite;
+    animation: moveheart 3s linear infinite;
 }
 @keyframes moveheart{
     0%{
@@ -1268,7 +1268,7 @@ span::before{
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1rem;
+    font-size: 3rem;
 }
 
 #copy a {
