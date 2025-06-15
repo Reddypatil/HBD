@@ -916,7 +916,7 @@ span{
     top: 210px;
     left: -100px;
     animation: cute 3s infinite ease-in-out;
-    animation-delay: 15s;
+    animation-delay: 10s;
 }
 @keyframes cute{
     0%{
@@ -942,7 +942,7 @@ span{
     margin-top: -30px;
     margin-left: -40px;
     animation: cutemail 3s linear infinite;
-    animation-delay: 15s;
+    animation-delay: 8s;
     z-index: -1;
     opacity: 0;
     font-weight: 600;
@@ -1148,7 +1148,7 @@ span{
     text-shadow: 0 0 8px red;
 }
 .boxMail .boxMail-container .card2:hover h3{
-    animation: texth3 3s forwards;
+    animation: texth3 1s forwards;
     animation-delay: 2s;
     transition: 1s;
 }
