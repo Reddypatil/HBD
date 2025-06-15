@@ -916,7 +916,7 @@ span{
     top: 210px;
     left: -100px;
     animation: cute 3s infinite ease-in-out;
-    animation-delay: 15s;
+    animation-delay: 8s;
 }
 @keyframes cute{
     0%{
@@ -942,7 +942,7 @@ span{
     margin-top: -30px;
     margin-left: -40px;
     animation: cutemail 3s linear infinite;
-    animation-delay: 15s;
+    animation-delay: 5s;
     z-index: -1;
     opacity: 0;
     font-weight: 600;
@@ -967,7 +967,7 @@ span{
     right: -100px;
     transform: scaleX(-1);
     animation: cute2 3s infinite ease-in-out;
-    animation-delay: 10s;
+    animation-delay: 5s;
 }
 @keyframes cute2{
     0%{
@@ -993,7 +993,7 @@ span{
     margin-top: -30px;
     margin-left: -100px;
     animation: cutemail2 3s linear infinite;
-    animation-delay: 10s;
+    animation-delay: 8s;
     z-index: -1;
     opacity: 0;
     font-weight: 600;
